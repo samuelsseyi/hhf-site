@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Phone, Mail, MapPin, Heart } from "lucide-react";
+import { Phone, Mail, MapPin } from "lucide-react";
 import { BRAND, NAV_LINKS, PARTNERS } from "@/lib/constants";
 
 export function Footer() {
@@ -169,9 +169,6 @@ export function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
           <p className="text-xs text-white/40">
             © {year} Haven for the Hopeless Foundation. All rights reserved.
-          </p>
-          <p className="text-xs text-white/30 flex items-center gap-1">
-            Made with <Heart size={10} className="text-ember" /> in Nigeria
           </p>
         </div>
       </div>

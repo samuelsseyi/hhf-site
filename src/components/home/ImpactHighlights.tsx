@@ -25,7 +25,7 @@ const CARDS = [
     thumb: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.45.jpeg",
     thumbAlt: "Widow empowerment and wellness session",
     stats: [
-      "50 widows supported with free medical screenings",
+      "100 women supported with free medical screenings",
       "Relief materials distributed to all participants",
       "Emotional wellness sessions for dignity & hope",
     ],
@@ -59,9 +59,9 @@ const CARDS = [
 const PHOTO_WALL = [
   { src: "/images/girlchild-programs/WhatsApp Image 2026-06-11 at 15.58.14.jpeg", alt: "HHF school programme 2025" },
   { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.55 (1).jpeg", alt: "Women empowerment session 2025" },
-  { src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.11.jpeg", alt: "GCAMP mentorship in action" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53 (4).jpeg", alt: "HHF women health and wellness programme 2025" },
   { src: "/images/girlchild-advocate-mentorship/WhatsApp Image 2026-06-11 at 15.59.50 (3).jpeg", alt: "Girl child advocate programme" },
-  { src: "/images/hero/WhatsApp Image 2026-06-11 at 09.39.50.jpeg", alt: "HHF community moment" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.48.jpeg", alt: "Women supported at HHF community outreach 2025" },
   { src: "/images/team/Founder HHF -Amb Mercy Igwe (2).jpeg", alt: "Amb. Mercy Igwe, HHF Founder" },
 ];
 

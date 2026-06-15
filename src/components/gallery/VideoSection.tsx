@@ -15,23 +15,53 @@ type Video = {
 const VIDEOS: Video[] = [
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.27.38.mp4",
-    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg",
+    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.27.42.jpeg",
     title: "GCAMP — Launch Day Highlights",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.30.30.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.29.jpeg",
-    title: "Girls Share Their Stories",
+    title: "GCAMP — Girls Share Their Stories",
+  },
+  {
+    src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.30.32.mp4",
+    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.31.jpeg",
+    title: "GCAMP — Mentorship in Action",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.39.45.mp4",
-    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.50.jpeg",
-    title: "Women Empowerment Program 2025",
+    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.44.jpeg",
+    title: "GCAMP — Empowerment Session",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.39.47.mp4",
-    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.50.jpeg",
+    thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.47.jpeg",
     title: "Peace Ambassadors — Training Day",
+  },
+  {
+    src: "/images/back-to-school/WhatsApp Video 2026-06-15 at 11.30.37.mp4",
+    thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.39.jpeg",
+    title: "Back to School — Distribution Day",
+  },
+  {
+    src: "/images/back-to-school/WhatsApp Video 2026-06-15 at 11.32.49.mp4",
+    thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (4).jpeg",
+    title: "Back to School — Community Moments",
+  },
+  {
+    src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.44.mp4",
+    thumbnail: "/images/milo/WhatsApp Image 2026-06-15 at 11.32.40.jpeg",
+    title: "Milo Partnership — Collaboration Highlights",
+  },
+  {
+    src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.45.mp4",
+    thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (1).jpeg",
+    title: "Milo Partnership — Programme Impact",
+  },
+  {
+    src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.47.mp4",
+    thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (2).jpeg",
+    title: "Milo Partnership — Community Engagement",
   },
 ];
 
@@ -61,7 +91,7 @@ export function VideoSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {VIDEOS.map((video, i) => (
             <button
               key={video.src}

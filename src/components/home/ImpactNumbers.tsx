@@ -22,7 +22,7 @@ type StatItem = {
 
 const STATS: StatItem[] = [
   { icon: Users,        value: 1000, suffix: "+", label: "Children Reached",          goal: 5000, color: COLORS.gold    },
-  { icon: HeartHandshake,  value: 50,   suffix: "",  label: "Widows Supported",          goal: 200,  color: COLORS.ember   },
+  { icon: HeartHandshake,  value: 100,  suffix: "",  label: "Women Supported",           goal: 200,  color: COLORS.ember   },
   { icon: School,       value: 25,   suffix: "+", label: "Schools Impacted",           goal: 100,  color: COLORS.gold    },
   { icon: ShieldCheck,  value: 40,   suffix: "",  label: "Peace Ambassadors Trained",  goal: 150,  color: COLORS.ember   },
   { icon: BookOpen,     value: 600,  suffix: "+", label: "Learning Materials Distributed", goal: 2000, color: COLORS.gold },

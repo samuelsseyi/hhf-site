@@ -20,11 +20,11 @@ import { COLORS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Our Impact",
   description:
-    "Real numbers, real lives. HHF has reached 1,000+ children, supported 50 widows, enrolled 250 girls in GCAMP, and trained 40 Peace Ambassadors — all documented.",
+    "Real numbers, real lives. HHF has reached 1,000+ children, supported 100 women, enrolled 250 girls in GCAMP, and trained 40 Peace Ambassadors — all documented.",
   openGraph: {
     title: "Our Impact | Haven for the Hopeless Foundation",
     description:
-      "1,000+ children reached. 250 girls in GCAMP. 50 widows supported. Every number is a life.",
+      "1,000+ children reached. 250 girls in GCAMP. 100 women supported. Every number is a life.",
   },
   twitter: {
     card: "summary_large_image",
@@ -38,7 +38,7 @@ const LIGHT_BLUE = "#EAF1FB";
 const HEADLINE_STATS = [
   { number: "1,000+", label: "Children Reached",    icon: Users,          color: COLORS.cobalt },
   { number: "250",    label: "Girls in GCAMP",       icon: Star,           color: COLORS.ember  },
-  { number: "50",     label: "Widows Supported",     icon: Heart,          color: COLORS.gold   },
+  { number: "100",    label: "Women Supported",      icon: Heart,          color: COLORS.gold   },
   { number: "40",     label: "Peace Ambassadors",    icon: HeartHandshake, color: COLORS.cobalt },
   { number: "600+",   label: "Learning Kits Given",  icon: Package,        color: COLORS.ember  },
   { number: "5",      label: "Partner Schools",      icon: School,         color: COLORS.gold   },
@@ -49,15 +49,15 @@ const PROGRAMS = [
     title: "GCAMP",
     subtitle: "Girl Child Advocacy & Mentorship Project",
     stats: ["250 girls enrolled", "5 schools · Ikorodu", "9-month mentorship cycle", "National expansion by 2030"],
-    photo: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.29.jpeg",
-    photoAlt: "GCAMP girls and mentors at school — Ikorodu 2026",
+    photo: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.47.jpeg",
+    photoAlt: "GCAMP girls in mentorship session — Ikorodu 2026",
     bg: COLORS.cobalt,
     href: "/programs/gcamp",
   },
   {
     title: "Women Empowerment",
     subtitle: "Health, Wellness & Livelihood Support",
-    stats: ["50 widows supported", "Free medical screenings", "Livelihood training sessions", "2025 cohort complete"],
+    stats: ["100 women supported", "Free medical screenings", "Livelihood training sessions", "2025 cohort complete"],
     photo: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.51.jpeg",
     photoAlt: "HHF women empowerment and health programme",
     bg: COLORS.ember,
@@ -89,7 +89,7 @@ const TIMELINE = [
     year: "2025",
     label: "First Programs",
     items: [
-      "50 widows and market women supported",
+      "100 women supported (50 widows + 50 market women)",
       "40 Peace Ambassadors trained",
       "600+ learning materials distributed",
       "Community health outreach delivered",

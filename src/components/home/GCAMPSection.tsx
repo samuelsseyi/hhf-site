@@ -22,16 +22,16 @@ const GALLERY_SECONDARY = [
 
 const GALLERY_STRIP = [
   {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg",
-    alt: "GCAMP launch day — January 21 2026",
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.28.01.jpeg",
+    alt: "GCAMP session in progress — Ikorodu 2026",
   },
   {
     src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.27.jpeg",
     alt: "Empowerment kit distribution — GCAMP 2026",
   },
   {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.50.jpeg",
-    alt: "Girls in GCAMP programme activity",
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.51.jpeg",
+    alt: "Girls engaged in GCAMP programme activity",
   },
 ];
 

@@ -23,24 +23,13 @@ export function WhoWeAre() {
               <div className="absolute inset-0 bg-gradient-to-t from-cobalt/30 to-transparent" />
             </div>
 
-            {/* Small photo 1 — founder */}
+            {/* Small photo — moved to bottom */}
             <div className="absolute -bottom-6 -right-4 sm:-right-8 w-36 sm:w-44 rounded-xl overflow-hidden shadow-xl border-4 border-cream aspect-square">
-              <Image
-                src="/images/team/Founder HHF -Amb Mercy Igwe.jpeg"
-                alt="Amb. Mercy Igwe — Founder, Haven for the Hopeless Foundation"
-                fill
-                sizes="176px"
-                className="object-cover object-top"
-              />
-            </div>
-
-            {/* Small photo 2 — classroom */}
-            <div className="absolute -top-6 -right-4 sm:-right-8 w-32 sm:w-40 rounded-xl overflow-hidden shadow-xl border-4 border-cream aspect-square">
               <Image
                 src="/images/girlchild-advocate-mentorship/WhatsApp Image 2026-06-11 at 15.59.49.jpeg"
                 alt="Girls receiving empowerment materials at HHF school programme"
                 fill
-                sizes="160px"
+                sizes="176px"
                 className="object-cover object-center"
               />
             </div>

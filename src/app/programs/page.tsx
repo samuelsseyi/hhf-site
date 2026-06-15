@@ -96,8 +96,8 @@ const PROGRAMS_2026 = [
     title: "Back-to-School Project",
     body: "Distribution of 1,000+ educational materials targeting unregistered and underserved children. Emotional encouragement and affirmation for every learner.",
     stats: ["1,000+ Materials", "Underserved Children", "Emotional Support"],
-    photo: "/images/girlchild-programs/WhatsApp Image 2026-06-11 at 15.58.15.jpeg",
-    photoAlt: "Back-to-school distribution day, HHF",
+    photo: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.39.jpeg",
+    photoAlt: "HHF Back-to-School project — distribution day",
   },
   {
     tag: "October 2026",
@@ -264,7 +264,8 @@ export default function ProgramsPage() {
             </div>
 
             {/* Timeline */}
-            <div className="relative">
+            <div>
+              <div className="relative">
               {/* Gold vertical line — desktop */}
               <div
                 className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-px -translate-x-1/2"
@@ -364,6 +365,7 @@ export default function ProgramsPage() {
                     </div>
                   </div>
                 ))}
+              </div>
               </div>
 
               {/* Phase 6 — National Expansion */}

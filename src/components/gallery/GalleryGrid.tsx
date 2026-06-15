@@ -22,6 +22,10 @@ const CATEGORY_LABELS: Record<string, string> = {
   "girlchild-programs": "Girl Child Programmes",
   "girlchild-advocate-mentorship": "Advocacy & Mentorship",
   "women-empowerment": "Women Empowerment",
+  "back-to-school": "Back to School",
+  "peace-clubs": "Peace Clubs",
+  "girl-child": "Girl Child Initiative",
+  milo: "Milo Partnership",
   team: "Our Team",
   flyers: "Events & Flyers",
 };

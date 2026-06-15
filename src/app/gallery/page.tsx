@@ -16,7 +16,6 @@ export const metadata: Metadata = {
   },
 };
 import path from "path";
-import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -32,9 +31,22 @@ const IMAGE_CATEGORIES = [
   "girlchild-programs",
   "girlchild-advocate-mentorship",
   "women-empowerment",
+  "peace-clubs",
+  "girl-child",
+  "milo",
   "team",
   "flyers",
 ];
+
+// Extra folders whose images are merged into an existing category tab
+const CATEGORY_EXTRAS: Record<string, string[]> = {
+  milo: ["back-to-school"],
+};
+
+// Files to exclude from specific category tabs
+const EXCLUDED_FILES: Record<string, string[]> = {
+  team: ["Founder HHF -Amb Mercy Igwe (2).jpeg"],
+};
 
 const ALLOWED_EXTENSIONS = /\.(jpe?g|png|webp|gif)$/i;
 
@@ -42,47 +54,29 @@ function loadImages() {
   const publicDir = path.join(process.cwd(), "public", "images");
 
   return IMAGE_CATEGORIES.flatMap((category) => {
-    const dir = path.join(publicDir, category);
-    try {
-      return fs
-        .readdirSync(dir)
-        .filter((file) => ALLOWED_EXTENSIONS.test(file))
-        .map((file) => ({
-          src: `/images/${category}/${file}`,
-          alt: `Haven for the Hopeless Foundation — ${
-            category.replace(/-/g, " ")
-          } — programme photo`,
-          category,
-        }));
-    } catch {
-      return [];
-    }
+    const foldersToScan = [category, ...(CATEGORY_EXTRAS[category] ?? [])];
+    const skip = EXCLUDED_FILES[category] ?? [];
+
+    return foldersToScan.flatMap((folder) => {
+      const dir = path.join(publicDir, folder);
+      try {
+        return fs
+          .readdirSync(dir)
+          .filter((file) => ALLOWED_EXTENSIONS.test(file) && !skip.includes(file))
+          .map((file) => ({
+            src: `/images/${folder}/${file}`,
+            alt: `Haven for the Hopeless Foundation — ${
+              category.replace(/-/g, " ")
+            } — programme photo`,
+            category,
+          }));
+      } catch {
+        return [];
+      }
+    });
   });
 }
 
-const PRESS = [
-  {
-    publication: "Punch Nigeria",
-    date: "February 2026",
-    headline: "How HHF Is Transforming Girl Child Education in Lagos",
-    excerpt:
-      "Haven for the Hopeless Foundation's GCAMP initiative is reaching 250 girls across five Ikorodu schools in its first year.",
-  },
-  {
-    publication: "The Cable",
-    date: "January 2026",
-    headline: "Meet the NGO Building Future Leaders in Ikorodu",
-    excerpt:
-      "Amb. Mercy Igwe founded HHF out of a personal burden — and now her organisation is a model for community-led change.",
-  },
-  {
-    publication: "Channels TV",
-    date: "January 2026",
-    headline: "GCAMP Launch: 250 Girls Enrolled in 9-Month Mentorship Cycle",
-    excerpt:
-      "The Girl Child Advocacy & Mentorship Project launched on January 21, 2026, with support from Lagos State partners.",
-  },
-];
 
 const DOWNLOADS = [
   {
@@ -130,7 +124,7 @@ export default function GalleryPage() {
         </section>
 
         {/* ── GALLERY GRID ── */}
-        <section className="py-16 bg-cream">
+        <section className="relative py-16 bg-cream overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <GalleryGrid images={images} categories={IMAGE_CATEGORIES} />
           </div>
@@ -143,54 +137,6 @@ export default function GalleryPage() {
 
         {/* ── INSTAGRAM FEED ── */}
         <InstagramFeed />
-
-        {/* ── PRESS & MEDIA ── */}
-        <section className="relative py-24 bg-cobalt overflow-hidden">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="max-w-2xl mb-12">
-              <span className="block w-10 h-0.5 bg-gold mb-6" />
-              <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3">
-                In the press.
-              </h2>
-              <p className="text-white/50 text-base">
-                Media coverage and features.
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-              {PRESS.map((item) => (
-                <div
-                  key={item.headline}
-                  className="bg-white/5 border border-white/10 rounded-2xl p-6 flex flex-col"
-                >
-                  <div className="flex items-center justify-between mb-4">
-                    <span className="font-bold text-gold text-sm">{item.publication}</span>
-                    <span className="text-white/40 text-xs font-mono">{item.date}</span>
-                  </div>
-                  <h3 className="font-display text-white font-bold text-base leading-snug mb-3 flex-1">
-                    {item.headline}
-                  </h3>
-                  <p className="text-white/50 text-sm leading-relaxed mb-5">
-                    {item.excerpt}
-                  </p>
-                  <span className="inline-flex items-center gap-1.5 text-white/30 text-xs font-semibold italic">
-                    Article link coming soon
-                  </span>
-                </div>
-              ))}
-            </div>
-
-            <p className="text-white/40 text-sm">
-              For media enquiries and press materials,{" "}
-              <Link href="/contact" className="text-gold hover:underline">
-                contact us
-              </Link>
-              .
-            </p>
-          </div>
-
-          <WaveArc fill={COLORS.cream} />
-        </section>
 
         {/* ── DOWNLOADS ── */}
         <section className="py-24 bg-cream">

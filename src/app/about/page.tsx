@@ -180,6 +180,15 @@ const TEAM = [
   },
 ];
 
+const PARTNER_PHOTOS = [
+  { src: "/images/milo/WhatsApp Image 2026-06-15 at 11.32.40.jpeg", alt: "HHF Milo collaboration — community programme" },
+  { src: "/images/peace-clubs/WhatsApp Image 2026-06-15 at 11.20.55 (2).jpeg", alt: "HHF Peace Clubs programme — community engagement" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.46.jpeg", alt: "HHF women empowerment programme 2025" },
+  { src: "/images/girl-child/WhatsApp Image 2026-06-15 at 11.22.54 (1).jpeg", alt: "HHF girl-child empowerment initiative" },
+  { src: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (1).jpeg", alt: "HHF Back-to-School project — materials distribution" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53 (2).jpeg", alt: "HHF women wellness and outreach programme 2025" },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -230,7 +239,7 @@ export default function AboutPage() {
                 <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-4/3">
                   <Image
                     src="/images/team/Founder HHF -Amb Mercy Igwe (2).jpeg"
-                    alt="Amb. Mercy Igwe at HHF event"
+                    alt="Amb. Mercy Igwe — Founder, Haven for the Hopeless Foundation"
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     className="object-cover object-top"
@@ -239,8 +248,8 @@ export default function AboutPage() {
                 <div className="grid grid-cols-2 gap-3 mt-3">
                   <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
                     <Image
-                      src="/images/team/WhatsApp Image 2026-06-15 at 05.20.33 (1).jpeg"
-                      alt="HHF team at community outreach"
+                      src="/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.54.jpeg"
+                      alt="HHF women empowerment programme — health and wellness 2025"
                       fill
                       sizes="25vw"
                       className="object-cover object-center"
@@ -248,8 +257,8 @@ export default function AboutPage() {
                   </div>
                   <div className="relative rounded-xl overflow-hidden shadow-md aspect-square">
                     <Image
-                      src="/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg"
-                      alt="First GCAMP programme session, Ikorodu 2024"
+                      src="/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.43.jpeg"
+                      alt="GCAMP programme session — Ikorodu 2026"
                       fill
                       sizes="25vw"
                       className="object-cover object-center"
@@ -279,7 +288,7 @@ export default function AboutPage() {
                   </p>
                   <p>
                     In our first year alone, we reached 1,000+ children,
-                    supported 50 widows, trained 40 Peace Ambassadors, and
+                    supported 100 women, trained 40 Peace Ambassadors, and
                     launched GCAMP — a national mentorship initiative already
                     transforming lives across 5 schools in Lagos.
                   </p>
@@ -498,13 +507,33 @@ export default function AboutPage() {
               <h2 className="font-display text-3xl sm:text-4xl font-bold text-white mb-3 max-w-2xl mx-auto">
                 Trusted by partners who believe in the work.
               </h2>
+              <p className="text-white/50 text-base max-w-xl mx-auto">
+                Real collaboration. Real impact. From the field.
+              </p>
             </div>
 
-            <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {/* Collaboration photo grid */}
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-12">
+              {PARTNER_PHOTOS.map(({ src, alt }) => (
+                <div key={src} className="relative rounded-2xl overflow-hidden group" style={{ height: "200px" }}>
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    sizes="(max-width: 640px) 50vw, 33vw"
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-cobalt/20 group-hover:bg-cobalt/10 transition-colors duration-300" />
+                </div>
+              ))}
+            </div>
+
+            {/* Partner name pills */}
+            <div className="flex flex-wrap justify-center gap-3 mb-12">
               {PARTNERS.map((partner) => (
                 <div
                   key={partner}
-                  className="bg-white/10 border border-white/20 rounded-xl px-6 py-4 text-white font-semibold text-sm hover:bg-white/15 transition-colors duration-200"
+                  className="bg-white/10 border border-white/20 rounded-xl px-5 py-3 text-white font-semibold text-sm hover:bg-white/15 transition-colors duration-200"
                 >
                   {partner}
                 </div>

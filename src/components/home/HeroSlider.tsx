@@ -5,7 +5,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { ChevronLeft, ChevronRight, ArrowRight } from "lucide-react";
 
-const SLIDES = [
+type Slide = {
+  image: string;
+  alt: string;
+  heading: string;
+  subheading: string;
+  cta?: { label: string; href: string };
+};
+
+const SLIDES: Slide[] = [
   {
     image: "/images/hero/WhatsApp Image 2026-06-11 at 15.58.16 (2).jpeg",
     alt: "Girls in HHF empowerment program — joyful, confident, energised",
@@ -13,22 +21,23 @@ const SLIDES = [
     subheading: "A Generation Shifts.",
   },
   {
+    image: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53.jpeg",
+    alt: "HHF women empowerment programme — widows and market women supported 2025",
+    heading: "100 Women. Free Healthcare.",
+    subheading: "Because Women's Wellbeing Is Non-Negotiable.",
+    cta: { label: "Support Women's Programs", href: "/programs#women" },
+  },
+  {
     image: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.51.jpeg",
     alt: "HHF women empowerment session — widow wellness programme",
-    heading: "Hope Is a Verb.",
-    subheading: "And We Live It Every Day.",
+    heading: "When Women Thrive,",
+    subheading: "Families and Communities Follow.",
   },
   {
-    image: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.50.jpeg",
-    alt: "Children engaged in HHF school outreach reading session",
+    image: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (2).jpeg",
+    alt: "HHF Back-to-School project — distributing learning materials to children",
     heading: "Education Opens Doors.",
     subheading: "We Make Sure They Stay Open.",
-  },
-  {
-    image: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg",
-    alt: "GCAMP launch session — Ikorodu, January 21 2026",
-    heading: "GCAMP Is Already Happening.",
-    subheading: "250 Girls. 5 Schools. One Movement.",
   },
   {
     image: "/images/hero/WhatsApp Image 2026-06-11 at 15.57.39.jpeg",
@@ -125,12 +134,22 @@ export function HeroSlider() {
 
           {/* CTAs */}
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link
-              href="/get-involved"
-              className="inline-flex items-center justify-center gap-2 bg-ember hover:bg-ember-light text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-ember/30"
-            >
-              Join the Movement
-            </Link>
+            {"cta" in SLIDES[current] && SLIDES[current].cta ? (
+              <Link
+                href={SLIDES[current].cta!.href}
+                className="inline-flex items-center justify-center gap-2 bg-ember hover:bg-ember-light text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-ember/30"
+              >
+                {SLIDES[current].cta!.label}
+                <ArrowRight size={16} strokeWidth={2.5} />
+              </Link>
+            ) : (
+              <Link
+                href="/get-involved"
+                className="inline-flex items-center justify-center gap-2 bg-ember hover:bg-ember-light text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-ember/30"
+              >
+                Join the Movement
+              </Link>
+            )}
             <Link
               href="/programs"
               className="inline-flex items-center justify-center gap-2 border-2 border-white/60 hover:border-white text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 hover:bg-white/10"

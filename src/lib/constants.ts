@@ -56,7 +56,7 @@ export const NAV_LINKS: NavItem[] = [
 
 export const IMPACT_STATS = {
   children: 1000,
-  widows: 50,
+  women: 100,
   schools: 25,
   peaceAmbassadors: 40,
   learningMaterials: 600,
@@ -67,6 +67,8 @@ export const PARTNERS = [
   "Milo Nestlé",
   "Lagos State Neighborhood Safety Corps",
   "Ministry of Education",
+  "Help for All International Foundation",
+  "Atlas Initiative",
 ];
 
 export const GCAMP_STATS = [

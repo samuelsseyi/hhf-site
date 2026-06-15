@@ -78,7 +78,7 @@ const STORIES = [
       "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53.jpeg",
     alt: "Widow at HHF women empowerment session",
     title: "The first health check in years",
-    body: "50 widows received free medical screenings in 2025. For many, it was the first health check in years.",
+    body: "100 women received free medical screenings in 2025. For many, it was the first health check in years.",
     tag: "Women Empowerment 2025",
     tagColor: COLORS.ember,
   },
