@@ -26,6 +26,7 @@ const CATEGORY_LABELS: Record<string, string> = {
   "peace-clubs": "Peace Clubs",
   "girl-child": "Girl Child Initiative",
   milo: "Milo Partnership",
+  mtn: "MTN Partnership",
   team: "Our Team",
   flyers: "Events & Flyers",
 };

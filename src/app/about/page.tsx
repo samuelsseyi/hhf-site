@@ -182,11 +182,11 @@ const TEAM = [
 
 const PARTNER_PHOTOS = [
   { src: "/images/milo/WhatsApp Image 2026-06-15 at 11.32.40.jpeg", alt: "HHF Milo collaboration — community programme" },
+  { src: "/images/mtn/WhatsApp Image 2026-06-15 at 17.40.59.jpeg", alt: "HHF MTN partnership — community engagement" },
   { src: "/images/peace-clubs/WhatsApp Image 2026-06-15 at 11.20.55 (2).jpeg", alt: "HHF Peace Clubs programme — community engagement" },
   { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.46.jpeg", alt: "HHF women empowerment programme 2025" },
-  { src: "/images/girl-child/WhatsApp Image 2026-06-15 at 11.22.54 (1).jpeg", alt: "HHF girl-child empowerment initiative" },
   { src: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (1).jpeg", alt: "HHF Back-to-School project — materials distribution" },
-  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53 (2).jpeg", alt: "HHF women wellness and outreach programme 2025" },
+  { src: "/images/ongoing/WhatsApp Image 2026-06-15 at 17.31.55 (2).jpeg", alt: "HHF ongoing community outreach 2026" },
 ];
 
 export default function AboutPage() {

@@ -34,6 +34,7 @@ const IMAGE_CATEGORIES = [
   "peace-clubs",
   "girl-child",
   "milo",
+  "mtn",
   "team",
   "flyers",
 ];

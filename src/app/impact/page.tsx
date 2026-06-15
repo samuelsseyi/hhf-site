@@ -11,6 +11,8 @@ import {
   ArrowRight,
   CheckSquare,
   HeartHandshake,
+  Download,
+  FileText,
 } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -314,6 +316,64 @@ export default function ImpactPage() {
           </div>
 
           <WaveArc fill={COLORS.ember} />
+        </section>
+
+        {/* ── IMPACT REPORT DOWNLOAD ── */}
+        <section className="py-20 bg-cream">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="bg-white rounded-3xl shadow-sm border border-cobalt/8 overflow-hidden">
+              <div className="grid grid-cols-1 lg:grid-cols-5">
+                {/* Left — accent block */}
+                <div
+                  className="lg:col-span-2 flex flex-col items-center justify-center gap-4 p-10"
+                  style={{ backgroundColor: COLORS.cobalt }}
+                >
+                  <div className="w-16 h-16 rounded-2xl bg-white/10 border border-white/20 flex items-center justify-center">
+                    <FileText size={30} className="text-gold" strokeWidth={1.5} />
+                  </div>
+                  <p className="text-white/50 text-xs font-bold uppercase tracking-widest text-center">
+                    Official Document
+                  </p>
+                  <p className="font-display text-xl font-bold text-white text-center leading-snug">
+                    2025 Impact Report
+                  </p>
+                  <p className="text-gold text-xs font-semibold text-center">
+                    Haven for the Hopeless Foundation
+                  </p>
+                </div>
+
+                {/* Right — content */}
+                <div className="lg:col-span-3 p-8 lg:p-10 flex flex-col justify-center">
+                  <span className="gold-rule" />
+                  <h2 className="font-display text-2xl sm:text-3xl font-bold text-cobalt mb-3">
+                    Read the full story of 2025.
+                  </h2>
+                  <p className="text-charcoal/60 text-base leading-relaxed mb-6">
+                    Our 2025 Impact Report documents every programme, every number, and every life — widows empowered, children reached, Peace Ambassadors trained, and the launch of GCAMP. Transparent, photographed, and verified.
+                  </p>
+                  <div className="flex flex-col sm:flex-row gap-3">
+                    <a
+                      href="/HHF-Impact-Report-2025.pdf"
+                      download="HHF-Impact-Report-2025.pdf"
+                      className="inline-flex items-center justify-center gap-2 bg-cobalt hover:bg-cobalt/90 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-all duration-200 shadow-md"
+                    >
+                      <Download size={16} strokeWidth={2.5} />
+                      Download Report (PDF)
+                    </a>
+                    <a
+                      href="/HHF-Impact-Report-2025.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center justify-center gap-2 border-2 border-cobalt/30 hover:border-cobalt text-cobalt font-bold text-sm px-7 py-3.5 rounded-full transition-all duration-200"
+                    >
+                      View in Browser
+                      <ArrowRight size={15} strokeWidth={2.5} />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* ── DONATE CTA ── */}

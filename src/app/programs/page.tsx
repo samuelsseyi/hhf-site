@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Star, ArrowRight, ChevronRight, HeartHandshake } from "lucide-react";
+import { Star, ArrowRight, ChevronRight, HeartHandshake, Download } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Our Programs",
@@ -86,8 +86,8 @@ const PROGRAMS_2026 = [
     title: "Drug & Substance Abuse Prevention Campaign",
     body: "School-centred sensitisation programs, peer education, and advocacy training — focused on prevention, awareness, and responsible decision-making among youth.",
     stats: ["Schools Targeted", "Peer Educators", "Youth Focused"],
-    photo: "/images/girlchild-advocate-mentorship/WhatsApp Image 2026-06-11 at 15.59.49.jpeg",
-    photoAlt: "HHF youth advocacy session",
+    photo: "/images/flyers/WhatsApp Image 2026-06-11 at 15.57.40 (5).jpeg",
+    photoAlt: "Drug & Substance Abuse Prevention Campaign flyer — HHF 2026",
   },
   {
     tag: "September 2026",
@@ -204,13 +204,23 @@ export default function ProgramsPage() {
                   ))}
                 </div>
 
-                <Link
-                  href="/programs/gcamp"
-                  className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-cobalt font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
-                >
-                  Full GCAMP Details
-                  <ArrowRight size={15} strokeWidth={2.5} />
-                </Link>
+                <div className="flex flex-col sm:flex-row gap-3">
+                  <Link
+                    href="/programs/gcamp"
+                    className="inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-cobalt font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
+                  >
+                    Full GCAMP Details
+                    <ArrowRight size={15} strokeWidth={2.5} />
+                  </Link>
+                  <a
+                    href="/GCAMP-Brochure-2026.pdf"
+                    download="GCAMP-Brochure-2026.pdf"
+                    className="inline-flex items-center gap-2 bg-white/10 hover:bg-white/20 border border-white/25 text-white font-bold text-sm px-7 py-3.5 rounded-full transition-colors duration-200"
+                  >
+                    <Download size={15} strokeWidth={2.5} />
+                    Download Brochure
+                  </a>
+                </div>
               </div>
 
               {/* Photo collage — 40% */}

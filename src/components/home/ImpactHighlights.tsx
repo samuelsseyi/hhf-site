@@ -57,11 +57,11 @@ const CARDS = [
 ];
 
 const PHOTO_WALL = [
-  { src: "/images/girlchild-programs/WhatsApp Image 2026-06-11 at 15.58.14.jpeg", alt: "HHF school programme 2025" },
-  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.55 (1).jpeg", alt: "Women empowerment session 2025" },
-  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53 (4).jpeg", alt: "HHF women health and wellness programme 2025" },
-  { src: "/images/girlchild-advocate-mentorship/WhatsApp Image 2026-06-11 at 15.59.50 (3).jpeg", alt: "Girl child advocate programme" },
-  { src: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.48.jpeg", alt: "Women supported at HHF community outreach 2025" },
+  { src: "/images/ongoing/WhatsApp Image 2026-06-15 at 17.31.55 (1).jpeg", alt: "HHF ongoing outreach 2026" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-15 at 17.40.59 (1).jpeg", alt: "Women empowerment session 2026" },
+  { src: "/images/ongoing/WhatsApp Image 2026-06-15 at 17.31.55 (3).jpeg", alt: "HHF community outreach in progress 2026" },
+  { src: "/images/women-empowerment/WhatsApp Image 2026-06-15 at 17.40.59 (3).jpeg", alt: "HHF women wellness programme 2026" },
+  { src: "/images/ongoing/WhatsApp Image 2026-06-15 at 17.31.56.jpeg", alt: "HHF field outreach — serving the community 2026" },
   { src: "/images/team/Founder HHF -Amb Mercy Igwe (2).jpeg", alt: "Amb. Mercy Igwe, HHF Founder" },
 ];
 

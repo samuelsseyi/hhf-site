@@ -28,6 +28,7 @@ import {
   BookOpen,
   Home,
   ArrowRight,
+  Download,
 } from "lucide-react";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
@@ -341,6 +342,31 @@ export default function GetInvolvedPage() {
           </div>
 
           <WaveArc fill={COLORS.ember} />
+        </section>
+
+        {/* ── IMPACT REPORT DOWNLOAD ── */}
+        <section className="py-14 bg-cobalt">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col sm:flex-row items-center justify-between gap-6 bg-white/8 border border-white/15 rounded-2xl px-8 py-6">
+              <div className="flex items-center gap-5">
+                <div className="w-12 h-12 rounded-xl bg-gold/15 border border-gold/25 flex items-center justify-center shrink-0">
+                  <Download size={20} className="text-gold" strokeWidth={1.5} />
+                </div>
+                <div>
+                  <p className="text-white font-bold text-base">2025 Impact Report</p>
+                  <p className="text-white/50 text-sm">See exactly where every programme goes — documented and verified.</p>
+                </div>
+              </div>
+              <a
+                href="/HHF-Impact-Report-2025.pdf"
+                download="HHF-Impact-Report-2025.pdf"
+                className="shrink-0 inline-flex items-center gap-2 bg-gold hover:bg-gold-light text-cobalt font-bold text-sm px-6 py-3 rounded-full transition-all duration-200 shadow-md"
+              >
+                <Download size={15} strokeWidth={2.5} />
+                Download PDF
+              </a>
+            </div>
+          </div>
         </section>
 
         {/* ── CLOSING CTA ── */}
