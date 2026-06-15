@@ -144,7 +144,7 @@ export default function AboutPage() {
             className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-cobalt/80" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/55" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-black/55" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-28 pt-36 w-full">
             <nav className="flex items-center gap-2 text-white/50 text-xs mb-6" aria-label="Breadcrumb">
@@ -171,7 +171,7 @@ export default function AboutPage() {
 
               {/* Photo collage */}
               <div className="relative">
-                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-[4/3]">
+                <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-4/3">
                   <Image
                     src="/images/team/Founder HHF -Amb Mercy Igwe (2).jpeg"
                     alt="Amb. Mercy Igwe at HHF event"
@@ -447,7 +447,7 @@ export default function AboutPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {TEAM.map(({ photo, name, role, bio }) => (
                 <div key={name} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-4/3 overflow-hidden">
                     <Image
                       src={photo}
                       alt={`${name} — ${role}`}

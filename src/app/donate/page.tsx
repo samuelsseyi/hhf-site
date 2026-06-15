@@ -282,7 +282,7 @@ export default function DonatePage() {
                   }`}
                 >
                   <div
-                    className={`relative h-72 lg:h-[360px] rounded-2xl overflow-hidden shadow-xl ${
+                    className={`relative h-72 lg:h-90 rounded-2xl overflow-hidden shadow-xl ${
                       i % 2 !== 0 ? "lg:[direction:ltr]" : ""
                     }`}
                   >

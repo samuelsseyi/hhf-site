@@ -154,7 +154,7 @@ export default function GetInvolvedPage() {
               </div>
 
               {/* Photo */}
-              <div className="relative h-96 lg:h-[560px] rounded-2xl overflow-hidden shadow-xl">
+              <div className="relative h-96 lg:h-140 rounded-2xl overflow-hidden shadow-xl">
                 <Image
                   src="/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg"
                   alt="Beneficiary receiving support from HHF"

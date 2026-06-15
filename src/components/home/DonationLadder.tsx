@@ -19,7 +19,7 @@ const TIERS = [
 export function DonationLadder() {
   return (
     <section className="arc-section relative py-28 bg-cobalt overflow-hidden" aria-label="Donation impact ladder">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--color-cobalt-light)_0%,_transparent_65%)] opacity-50 pointer-events-none" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,var(--color-cobalt-light)_0%,transparent_65%)] opacity-50 pointer-events-none" />
 
       <div className="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Heading */}
