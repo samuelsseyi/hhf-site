@@ -4,26 +4,34 @@ import { ArrowRight, Handshake, Star } from "lucide-react";
 import { WaveArc } from "@/components/ui/WaveArc";
 import { COLORS, GCAMP_STATS } from "@/lib/constants";
 
-const GCAMP_PHOTOS = [
+const GALLERY_FEATURED = {
+  src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.29.jpeg",
+  alt: "GCAMP girls at mentorship session — Ikorodu 2026",
+};
+
+const GALLERY_SECONDARY = [
   {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg",
-    alt: "GCAMP launch day — January 21 2026, Ikorodu",
-  },
-  {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.55.jpeg",
-    alt: "Girls at first GCAMP mentorship session",
-  },
-  {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.27.jpeg",
-    alt: "Empowerment kits distribution — GCAMP 2026",
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.27.42.jpeg",
+    alt: "Girls engaged in GCAMP learning activity",
   },
   {
     src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.44.jpeg",
-    alt: "School engagement session — Ikorodu primary school",
+    alt: "School engagement session — Ikorodu",
+  },
+];
+
+const GALLERY_STRIP = [
+  {
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.26.54.jpeg",
+    alt: "GCAMP launch day — January 21 2026",
   },
   {
-    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.47.jpeg",
-    alt: "Mentor-girl interaction during GCAMP programme",
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.27.jpeg",
+    alt: "Empowerment kit distribution — GCAMP 2026",
+  },
+  {
+    src: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.50.jpeg",
+    alt: "Girls in GCAMP programme activity",
   },
 ];
 
@@ -95,24 +103,46 @@ export function GCAMPSection() {
             </div>
           </div>
 
-          {/* Right — Horizontal photo strip */}
-          <div className="flex flex-col gap-4">
-            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-2">
+          {/* Right — Mini gallery */}
+          <div className="flex flex-col gap-2.5">
+            <p className="text-white/40 text-xs font-semibold uppercase tracking-widest mb-1">
               From the field
             </p>
-            <div className="flex gap-3 overflow-x-auto pb-2 snap-x snap-mandatory scrollbar-none" style={{ scrollbarWidth: "none" }}>
-              {GCAMP_PHOTOS.map(({ src, alt }) => (
-                <div
-                  key={src}
-                  className="snap-start shrink-0 rounded-xl overflow-hidden w-48 sm:w-56 aspect-square shadow-lg"
-                >
+
+            {/* Top grid: featured tall left + 2 stacked right */}
+            <div className="grid grid-cols-2 gap-2.5" style={{ height: "320px" }}>
+              <div className="relative rounded-xl overflow-hidden row-span-2">
+                <Image
+                  src={GALLERY_FEATURED.src}
+                  alt={GALLERY_FEATURED.alt}
+                  fill
+                  sizes="(max-width: 1024px) 45vw, 22vw"
+                  className="object-cover object-center hover:scale-105 transition-transform duration-500"
+                />
+              </div>
+              {GALLERY_SECONDARY.map(({ src, alt }) => (
+                <div key={src} className="relative rounded-xl overflow-hidden">
                   <Image
                     src={src}
                     alt={alt}
-                    width={224}
-                    height={224}
-                    sizes="224px"
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
+                    fill
+                    sizes="(max-width: 1024px) 45vw, 22vw"
+                    className="object-cover object-center hover:scale-105 transition-transform duration-500"
+                  />
+                </div>
+              ))}
+            </div>
+
+            {/* Bottom strip: 3 equal thumbnails */}
+            <div className="grid grid-cols-3 gap-2.5">
+              {GALLERY_STRIP.map(({ src, alt }) => (
+                <div key={src} className="relative aspect-square rounded-xl overflow-hidden">
+                  <Image
+                    src={src}
+                    alt={alt}
+                    fill
+                    sizes="(max-width: 1024px) 30vw, 14vw"
+                    className="object-cover object-center hover:scale-105 transition-transform duration-500"
                   />
                 </div>
               ))}

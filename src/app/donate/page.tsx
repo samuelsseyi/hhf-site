@@ -7,12 +7,14 @@ export const metadata: Metadata = {
     "Your gift changes a girl's life today — not eventually, today. Choose a donation amount, complete your details, and we'll send bank transfer instructions within minutes.",
   openGraph: {
     title: "Donate | Haven for the Hopeless Foundation",
-    description: "Your gift changes a life today. Transparent, documented, impactful.",
+    description:
+      "Your gift changes a life today. Transparent, documented, impactful.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Donate | Haven for the Hopeless Foundation",
-    description: "Every naira goes directly to girls, women, and communities in need.",
+    description:
+      "Every naira goes directly to girls, women, and communities in need.",
   },
 };
 import Link from "next/link";
@@ -46,7 +48,14 @@ const ICON_MAP: Record<string, React.ElementType> = {
 };
 
 const BAR_WIDTHS = ["18%", "32%", "48%", "64%", "80%", "100%"];
-const BAR_COLORS = ["#D4961E", "#C88A20", "#C84B1F", "#8B3B1A", "#163660", "#0C2447"];
+const BAR_COLORS = [
+  "#D4961E",
+  "#C88A20",
+  "#C84B1F",
+  "#8B3B1A",
+  "#163660",
+  "#0C2447",
+];
 
 const TRUST_BADGES = [
   { icon: ShieldCheck, label: "Registered NGO" },
@@ -65,7 +74,8 @@ const STORIES = [
     tagColor: COLORS.cobalt,
   },
   {
-    photo: "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53.jpeg",
+    photo:
+      "/images/women-empowerment/WhatsApp Image 2026-06-11 at 16.03.53.jpeg",
     alt: "Widow at HHF women empowerment session",
     title: "The first health check in years",
     body: "50 widows received free medical screenings in 2025. For many, it was the first health check in years.",
@@ -73,7 +83,8 @@ const STORIES = [
     tagColor: COLORS.ember,
   },
   {
-    photo: "/images/girlchild-programs/WhatsApp Image 2026-06-11 at 15.58.17.jpeg",
+    photo:
+      "/images/girlchild-programs/WhatsApp Image 2026-06-11 at 15.58.17.jpeg",
     alt: "Peace Ambassador in training",
     title: "The culture is shifting",
     body: "40 Peace Ambassadors trained. Two schools now have active Peace Clubs. The culture is shifting.",
@@ -87,7 +98,8 @@ const ALLOCATION = [
     label: "Direct Program Delivery",
     percent: 70,
     color: COLORS.gold,
-    description: "Girls receive learning kits, mentorship sessions, and empowerment training.",
+    description:
+      "Girls receive learning kits, mentorship sessions, and empowerment training.",
   },
   {
     label: "Operational Support",
@@ -145,8 +157,8 @@ export default function DonatePage() {
               Your gift changes a life today.
             </h1>
             <p className="text-white/70 text-lg sm:text-xl max-w-2xl leading-relaxed mb-10">
-              Not eventually. Today. GCAMP is running. Girls are showing up. Your donation keeps
-              them coming back.
+              Not eventually. Today. GCAMP is running. Girls are showing up.
+              Your donation keeps them coming back.
             </p>
 
             {/* Trust badges */}
@@ -182,7 +194,8 @@ export default function DonatePage() {
             <div className="space-y-3">
               {DONATION_TIERS.map((tier, i) => {
                 const Icon = ICON_MAP[tier.icon];
-                const barColor = BAR_COLORS[i] ?? BAR_COLORS[BAR_COLORS.length - 1];
+                const barColor =
+                  BAR_COLORS[i] ?? BAR_COLORS[BAR_COLORS.length - 1];
                 const barWidth = BAR_WIDTHS[i] ?? "100%";
                 return (
                   <div
@@ -192,7 +205,11 @@ export default function DonatePage() {
                     {/* Stepped color bar */}
                     <div
                       className="absolute left-0 top-0 bottom-0 rounded-l-xl"
-                      style={{ width: barWidth, backgroundColor: barColor, opacity: 0.18 }}
+                      style={{
+                        width: barWidth,
+                        backgroundColor: barColor,
+                        opacity: 0.18,
+                      }}
                     />
                     <div
                       className="absolute left-0 top-0 bottom-0 w-1 rounded-l-xl"
@@ -250,7 +267,8 @@ export default function DonatePage() {
                 Make your donation.
               </h2>
               <p className="text-charcoal/60 text-base">
-                Fill in your details and we will send you bank transfer instructions within minutes.
+                Fill in your details and we will send you bank transfer
+                instructions within minutes.
               </p>
             </div>
 
@@ -304,14 +322,17 @@ export default function DonatePage() {
                     <h3 className="font-display text-2xl sm:text-3xl font-bold text-cobalt mb-3 leading-snug">
                       {story.title}
                     </h3>
-                    <p className="text-charcoal/65 text-base leading-relaxed">{story.body}</p>
+                    <p className="text-charcoal/65 text-base leading-relaxed">
+                      {story.body}
+                    </p>
                   </div>
                 </div>
               ))}
             </div>
 
             <p className="text-charcoal/35 text-xs mt-12">
-              *Stories representative of real participants. Names changed to protect privacy.
+              *Stories representative of real participants. Names changed to
+              protect privacy.
             </p>
           </div>
 
@@ -327,8 +348,8 @@ export default function DonatePage() {
                 Where your money goes.
               </h2>
               <p className="text-white/50 text-base leading-relaxed">
-                We are committed to full transparency. All partners receive documented impact reports
-                with photo evidence.
+                We are committed to full transparency. All partners receive
+                documented impact reports with photo evidence.
               </p>
             </div>
 
@@ -345,7 +366,9 @@ export default function DonatePage() {
                       <span className="font-mono font-bold text-gold text-2xl leading-none">
                         100%
                       </span>
-                      <span className="text-white/40 text-xs mt-1">Accounted</span>
+                      <span className="text-white/40 text-xs mt-1">
+                        Accounted
+                      </span>
                     </div>
                   </div>
                 </div>
@@ -367,9 +390,13 @@ export default function DonatePage() {
                         >
                           {item.percent}%
                         </span>
-                        <span className="text-white font-bold text-sm">{item.label}</span>
+                        <span className="text-white font-bold text-sm">
+                          {item.label}
+                        </span>
                       </div>
-                      <p className="text-white/50 text-xs leading-relaxed">{item.description}</p>
+                      <p className="text-white/50 text-xs leading-relaxed">
+                        {item.description}
+                      </p>
                     </div>
                   </div>
                 ))}
@@ -388,7 +415,8 @@ export default function DonatePage() {
               Trusted by organisations that have seen the work firsthand.
             </h2>
             <p className="text-charcoal/55 text-base mb-8">
-              These organisations have partnered with, observed, and validated our programs.
+              These organisations have partnered with, observed, and validated
+              our programs.
             </p>
 
             <div className="flex flex-wrap gap-3 justify-center mb-10">

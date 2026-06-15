@@ -39,13 +39,41 @@ import { WaveArc } from "@/components/ui/WaveArc";
 import { BRAND, PARTNERS, COLORS } from "@/lib/constants";
 
 const VALUES = [
-  { icon: Heart,       title: "Compassion",    body: "We lead with empathy in every interaction." },
-  { icon: Users,       title: "Teamwork",       body: "We achieve more when we move together." },
-  { icon: HandHeart,   title: "Service",        body: "We exist to serve, not to be seen." },
-  { icon: Eye,         title: "Transparency",   body: "Every naira and every action is accountable." },
-  { icon: Leaf,        title: "Humility",       body: "We learn from the communities we serve." },
-  { icon: CheckSquare, title: "Responsibility", body: "We own our outcomes — good and bad." },
-  { icon: Sparkles,    title: "Excellence",     body: "We do the work well because the work matters." },
+  {
+    icon: Heart,
+    title: "Compassion",
+    body: "We lead with empathy in every interaction.",
+  },
+  {
+    icon: Users,
+    title: "Teamwork",
+    body: "We achieve more when we move together.",
+  },
+  {
+    icon: HandHeart,
+    title: "Service",
+    body: "We exist to serve, not to be seen.",
+  },
+  {
+    icon: Eye,
+    title: "Transparency",
+    body: "Every naira and every action is accountable.",
+  },
+  {
+    icon: Leaf,
+    title: "Humility",
+    body: "We learn from the communities we serve.",
+  },
+  {
+    icon: CheckSquare,
+    title: "Responsibility",
+    body: "We own our outcomes — good and bad.",
+  },
+  {
+    icon: Sparkles,
+    title: "Excellence",
+    body: "We do the work well because the work matters.",
+  },
 ];
 
 const WHY_HHF = [
@@ -71,38 +99,63 @@ const TOC_STEPS = [
     label: "INPUT",
     bg: COLORS.cobalt,
     darkText: false,
-    items: ["Donors & Partners", "Volunteer Mentors", "Educational Materials", "Psychosocial Support"],
+    items: [
+      "Donors & Partners",
+      "Volunteer Mentors",
+      "Educational Materials",
+      "Psychosocial Support",
+    ],
   },
   {
     label: "ACTIVITY",
     bg: COLORS.ember,
     darkText: false,
-    items: ["Mentorship Sessions", "Empowerment Programs", "Health Screenings", "Peacebuilding Training"],
+    items: [
+      "Mentorship Sessions",
+      "Empowerment Programs",
+      "Health Screenings",
+      "Peacebuilding Training",
+    ],
   },
   {
     label: "OUTPUT",
     bg: COLORS.gold,
     darkText: true,
-    items: ["Girls Enrolled in GCAMP", "Women Supported", "Counselors Trained", "Materials Distributed"],
+    items: [
+      "Girls Enrolled in GCAMP",
+      "Women Supported",
+      "Counselors Trained",
+      "Materials Distributed",
+    ],
   },
   {
     label: "OUTCOME",
     bg: "#163660",
     darkText: false,
-    items: ["Improved Confidence", "Leadership Skills", "Emotional Resilience", "Non-Violence Culture"],
+    items: [
+      "Improved Confidence",
+      "Leadership Skills",
+      "Emotional Resilience",
+      "Non-Violence Culture",
+    ],
   },
   {
     label: "IMPACT",
     bg: COLORS.charcoal,
     darkText: false,
-    items: ["Empowered Generation", "Stronger Communities", "Gender Equality", "Sustainable Nigeria"],
+    items: [
+      "Empowered Generation",
+      "Stronger Communities",
+      "Gender Equality",
+      "Sustainable Nigeria",
+    ],
   },
 ];
 
 const SDG_BADGES = [
-  { num: "4",  label: "Quality Education",          color: "#C5192D" },
-  { num: "5",  label: "Gender Equality",            color: "#FF3A21" },
-  { num: "16", label: "Peace & Justice",            color: "#00689D" },
+  { num: "4", label: "Quality Education", color: "#C5192D" },
+  { num: "5", label: "Gender Equality", color: "#FF3A21" },
+  { num: "16", label: "Peace & Justice", color: "#00689D" },
   { num: "17", label: "Partnerships for the Goals", color: "#19486A" },
 ];
 
@@ -132,7 +185,6 @@ export default function AboutPage() {
     <>
       <Header />
       <main className="min-h-screen">
-
         {/* ── SECTION 1 — HERO ─────────────────────────── */}
         <section className="relative min-h-[70vh] flex items-end overflow-hidden bg-cobalt">
           <Image
@@ -147,8 +199,13 @@ export default function AboutPage() {
           <div className="absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-black/55" />
 
           <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-28 pt-36 w-full">
-            <nav className="flex items-center gap-2 text-white/50 text-xs mb-6" aria-label="Breadcrumb">
-              <Link href="/" className="hover:text-gold transition-colors">Home</Link>
+            <nav
+              className="flex items-center gap-2 text-white/50 text-xs mb-6"
+              aria-label="Breadcrumb"
+            >
+              <Link href="/" className="hover:text-gold transition-colors">
+                Home
+              </Link>
               <ChevronRight size={12} />
               <span className="text-gold">About</span>
             </nav>
@@ -168,7 +225,6 @@ export default function AboutPage() {
         <section className="relative py-24 bg-cream overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
               {/* Photo collage */}
               <div className="relative">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl aspect-4/3">
@@ -211,13 +267,21 @@ export default function AboutPage() {
                 </h2>
                 <div className="space-y-4 text-charcoal/70 leading-relaxed">
                   <p>
-                    Haven for the Hopeless Foundation was founded on the conviction that every person — no matter their background, circumstance, or social standing — deserves access to a community of support, opportunity, and hope.
+                    Haven for the Hopeless Foundation was founded on the
+                    conviction that every person — no matter their background,
+                    circumstance, or social standing — deserves access to a
+                    community of support, opportunity, and hope.
                   </p>
                   <p>
-                    HHF was established in 2024 in Ikorodu, Lagos, with a clear focus: girls, women, and the less privileged. Not as charity cases — but as people of enormous, often untapped potential.
+                    HHF was established in 2024 in Ikorodu, Lagos, with a clear
+                    focus: girls, women, and the less privileged. Not as charity
+                    cases — but as people of enormous, often untapped potential.
                   </p>
                   <p>
-                    In our first year alone, we reached 1,000+ children, supported 50 widows, trained 40 Peace Ambassadors, and launched GCAMP — a national mentorship initiative already transforming lives across 5 schools in Lagos.
+                    In our first year alone, we reached 1,000+ children,
+                    supported 50 widows, trained 40 Peace Ambassadors, and
+                    launched GCAMP — a national mentorship initiative already
+                    transforming lives across 5 schools in Lagos.
                   </p>
                 </div>
               </div>
@@ -245,9 +309,12 @@ export default function AboutPage() {
                 <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-gold/15 text-gold mb-5">
                   <ShieldCheck size={24} strokeWidth={1.75} />
                 </span>
-                <h3 className="font-display text-xl font-bold text-white mb-3">Our Mission</h3>
+                <h3 className="font-display text-xl font-bold text-white mb-3">
+                  Our Mission
+                </h3>
                 <p className="text-white/70 leading-relaxed">
-                  To build a safe space for the hopeless and the less privileged through development, empowerment, and advocacy.
+                  To build a safe space for the hopeless and the less privileged
+                  through development, empowerment, and advocacy.
                 </p>
               </div>
 
@@ -259,9 +326,13 @@ export default function AboutPage() {
                 <span className="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-ember/15 text-ember mb-5">
                   <Globe size={24} strokeWidth={1.75} />
                 </span>
-                <h3 className="font-display text-xl font-bold text-white mb-3">Our Vision</h3>
+                <h3 className="font-display text-xl font-bold text-white mb-3">
+                  Our Vision
+                </h3>
                 <p className="text-white/70 leading-relaxed">
-                  A Nigeria where every girl, woman, and underserved child has access to the support, tools, and community they need to thrive.
+                  A Nigeria where every girl, woman, and underserved child has
+                  access to the support, tools, and community they need to
+                  thrive.
                 </p>
               </div>
             </div>
@@ -291,8 +362,12 @@ export default function AboutPage() {
                   <span className="inline-flex items-center justify-center w-10 h-10 rounded-xl bg-cobalt/6 text-cobalt group-hover:bg-cobalt group-hover:text-white transition-colors duration-300">
                     <Icon size={18} strokeWidth={2} />
                   </span>
-                  <h3 className="font-display text-lg font-bold text-cobalt">{title}</h3>
-                  <p className="text-charcoal/60 text-sm leading-relaxed">{body}</p>
+                  <h3 className="font-display text-lg font-bold text-cobalt">
+                    {title}
+                  </h3>
+                  <p className="text-charcoal/60 text-sm leading-relaxed">
+                    {body}
+                  </p>
                 </div>
               ))}
             </div>
@@ -312,12 +387,19 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {WHY_HHF.map(({ icon: Icon, title, body }) => (
-                <div key={title} className="flex flex-col items-center text-center">
+                <div
+                  key={title}
+                  className="flex flex-col items-center text-center"
+                >
                   <div className="w-16 h-16 rounded-2xl bg-gold/15 flex items-center justify-center mb-5">
                     <Icon size={28} strokeWidth={1.5} className="text-gold" />
                   </div>
-                  <h3 className="font-display text-xl font-bold text-white mb-3">{title}</h3>
-                  <p className="text-white/65 leading-relaxed text-sm">{body}</p>
+                  <h3 className="font-display text-xl font-bold text-white mb-3">
+                    {title}
+                  </h3>
+                  <p className="text-white/65 leading-relaxed text-sm">
+                    {body}
+                  </p>
                 </div>
               ))}
             </div>
@@ -343,16 +425,27 @@ export default function AboutPage() {
               {TOC_STEPS.map((step, i) => (
                 <Fragment key={step.label}>
                   <div className="flex-1 rounded-2xl overflow-hidden shadow-sm">
-                    <div className="px-4 py-3 text-center" style={{ backgroundColor: step.bg }}>
-                      <span className={`text-xs font-bold tracking-widest uppercase ${step.darkText ? "text-charcoal" : "text-white"}`}>
+                    <div
+                      className="px-4 py-3 text-center"
+                      style={{ backgroundColor: step.bg }}
+                    >
+                      <span
+                        className={`text-xs font-bold tracking-widest uppercase ${step.darkText ? "text-charcoal" : "text-white"}`}
+                      >
                         {step.label}
                       </span>
                     </div>
                     <div className="bg-white p-4">
                       <ul className="space-y-2">
                         {step.items.map((item) => (
-                          <li key={item} className="flex items-start gap-2 text-xs text-charcoal/70 leading-relaxed">
-                            <span className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0" style={{ backgroundColor: step.bg }} />
+                          <li
+                            key={item}
+                            className="flex items-start gap-2 text-xs text-charcoal/70 leading-relaxed"
+                          >
+                            <span
+                              className="w-1.5 h-1.5 rounded-full mt-1.5 shrink-0"
+                              style={{ backgroundColor: step.bg }}
+                            />
                             {item}
                           </li>
                         ))}
@@ -376,7 +469,10 @@ export default function AboutPage() {
               </p>
               <div className="flex flex-wrap justify-center gap-4">
                 {SDG_BADGES.map((sdg) => (
-                  <div key={sdg.num} className="flex items-center gap-3 bg-white border border-cobalt/10 rounded-xl px-4 py-3 shadow-sm">
+                  <div
+                    key={sdg.num}
+                    className="flex items-center gap-3 bg-white border border-cobalt/10 rounded-xl px-4 py-3 shadow-sm"
+                  >
                     <div
                       className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm shrink-0"
                       style={{ backgroundColor: sdg.color }}
@@ -446,7 +542,10 @@ export default function AboutPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               {TEAM.map(({ photo, name, role, bio }) => (
-                <div key={name} className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group">
+                <div
+                  key={name}
+                  className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 group"
+                >
                   <div className="relative aspect-4/3 overflow-hidden">
                     <Image
                       src={photo}
@@ -459,9 +558,15 @@ export default function AboutPage() {
                   </div>
                   <div className="p-6">
                     <span className="block w-8 h-0.5 bg-gold mb-3" />
-                    <h3 className="font-display text-lg font-bold text-cobalt mb-1">{name}</h3>
-                    <p className="text-ember text-xs font-semibold uppercase tracking-wide mb-3">{role}</p>
-                    <p className="text-charcoal/65 text-sm leading-relaxed">{bio}</p>
+                    <h3 className="font-display text-lg font-bold text-cobalt mb-1">
+                      {name}
+                    </h3>
+                    <p className="text-ember text-xs font-semibold uppercase tracking-wide mb-3">
+                      {role}
+                    </p>
+                    <p className="text-charcoal/65 text-sm leading-relaxed">
+                      {bio}
+                    </p>
                   </div>
                 </div>
               ))}
@@ -496,7 +601,6 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
-
       </main>
       <Footer />
     </>

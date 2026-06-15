@@ -72,7 +72,7 @@ export function HeroSlider() {
 
   return (
     <section
-      className="relative w-full min-h-screen flex flex-col overflow-hidden"
+      className="relative w-full h-screen flex flex-col overflow-hidden"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
       aria-label="HHF hero slideshow"
@@ -86,7 +86,6 @@ export function HeroSlider() {
           }`}
           aria-hidden={i !== current}
         >
-          {/* Photo */}
           <Image
             src={slide.image}
             alt={slide.alt}
@@ -95,41 +94,33 @@ export function HeroSlider() {
             sizes="100vw"
             className="object-cover object-center"
           />
-          {/* Solid cobalt base masks image quality, gradient adds depth */}
-          <div className="absolute inset-0 bg-cobalt/50" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/10 to-black/60" />
+          <div className="absolute inset-0 bg-black/45" />
+          <div className="absolute inset-0 bg-linear-to-b from-black/70 via-black/10 to-black/85" />
         </div>
       ))}
 
-      {/* Content — positioned on top of slides */}
-      <div className="relative z-20 flex-1 flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-28 pb-40">
-        <div className="max-w-4xl">
+      {/* Content */}
+      <div className="relative z-20 flex-1 flex flex-col justify-center px-4 sm:px-8 lg:px-16 pt-24 pb-32">
+        <div className="max-w-3xl">
           {/* Eyebrow */}
-          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold/90 mb-6">
-            Home of Hope &nbsp;·&nbsp; Ikorodu, Lagos &nbsp;·&nbsp; Est. 2024
+          <p className="text-xs font-semibold tracking-[0.2em] uppercase text-gold/80 mb-5">
+            Haven for the Hopeless Foundation &nbsp;·&nbsp; Ikorodu, Lagos
           </p>
 
-          {/* Heading — Fraunces display */}
+          {/* Heading */}
           <h1
-            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-3 transition-all duration-500"
+            className="font-display text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-2"
             key={`h-${current}`}
           >
             {SLIDES[current].heading}
           </h1>
 
-          {/* Subheading — gold accent */}
+          {/* Subheading */}
           <p
-            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic text-gold leading-tight mb-8 transition-all duration-500"
+            className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold italic text-gold leading-tight mb-8"
             key={`s-${current}`}
           >
             {SLIDES[current].subheading}
-          </p>
-
-          {/* Body */}
-          <p className="text-white/80 text-base sm:text-lg max-w-2xl leading-relaxed mb-10">
-            Haven for the Hopeless Foundation is a Nigerian NGO transforming
-            lives through education, mentorship, girl-child empowerment, and
-            community advocacy.
           </p>
 
           {/* CTAs */}

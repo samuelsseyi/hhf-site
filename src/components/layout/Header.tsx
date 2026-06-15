@@ -37,11 +37,13 @@ export function Header() {
     return pathname === base || pathname.startsWith(base + "/");
   }
 
+  const onDark = !scrolled;
+
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-cobalt shadow-lg shadow-black/20"
+          ? "bg-white shadow-sm shadow-black/8 border-b border-black/5"
           : "bg-linear-to-b from-black/50 to-transparent"
       }`}
     >
@@ -71,7 +73,9 @@ export function Header() {
                     <Link
                       href={item.href}
                       className={`flex items-center gap-1 text-sm font-semibold tracking-wide transition-colors duration-200 pb-1 ${
-                        active ? "text-gold" : "text-white/90 hover:text-gold"
+                        active
+                          ? onDark ? "text-gold" : "text-cobalt"
+                          : onDark ? "text-white/90 hover:text-gold" : "text-cobalt/70 hover:text-cobalt"
                       }`}
                     >
                       {item.label}
@@ -82,9 +86,9 @@ export function Header() {
                       />
                     </Link>
                     <span
-                      className={`absolute bottom-0 left-0 h-0.5 bg-gold transition-all duration-200 ${
-                        active ? "w-full" : "w-0 group-hover:w-full"
-                      }`}
+                      className={`absolute bottom-0 left-0 h-0.5 transition-all duration-200 ${
+                        onDark ? "bg-gold" : "bg-cobalt"
+                      } ${active ? "w-full" : "w-0 group-hover:w-full"}`}
                     />
                     {/* Dropdown panel */}
                     <div className="absolute top-full left-1/2 -translate-x-1/2 pt-3 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-150 z-50">
@@ -116,14 +120,16 @@ export function Header() {
                   key={item.href}
                   href={item.href}
                   className={`relative text-sm font-semibold tracking-wide transition-colors duration-200 group pb-1 ${
-                    active ? "text-gold" : "text-white/90 hover:text-gold"
+                    active
+                      ? onDark ? "text-gold" : "text-cobalt"
+                      : onDark ? "text-white/90 hover:text-gold" : "text-cobalt/70 hover:text-cobalt"
                   }`}
                 >
                   {item.label}
                   <span
-                    className={`absolute bottom-0 left-0 h-0.5 bg-gold transition-all duration-200 ${
-                      active ? "w-full" : "w-0 group-hover:w-full"
-                    }`}
+                    className={`absolute bottom-0 left-0 h-0.5 transition-all duration-200 ${
+                      onDark ? "bg-gold" : "bg-cobalt"
+                    } ${active ? "w-full" : "w-0 group-hover:w-full"}`}
                   />
                 </Link>
               );
@@ -153,7 +159,9 @@ export function Header() {
 
             {/* Mobile hamburger */}
             <button
-              className="lg:hidden text-white p-2 rounded-md hover:bg-white/10 transition-colors"
+              className={`lg:hidden p-2 rounded-md transition-colors ${
+                onDark ? "text-white hover:bg-white/10" : "text-cobalt hover:bg-cobalt/8"
+              }`}
               onClick={() => setMenuOpen((v) => !v)}
               aria-label={menuOpen ? "Close menu" : "Open menu"}
               aria-expanded={menuOpen}
