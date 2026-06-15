@@ -1,26 +1,97 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  /* ── Brand Colours ──────────────────────────────── */
+  --color-cobalt:        #0C2447;
+  --color-cobalt-light:  #163660;
+  --color-ember:         #C84B1F;
+  --color-ember-light:   #d9622e;
+  --color-gold:          #D4961E;
+  --color-gold-light:    #e8ad30;
+  --color-cream:         #F8F4EE;
+  --color-cream-dark:    #ede7db;
+  --color-charcoal:      #1A1A2E;
+  --color-savanna:       #1C5C3E;
+  --color-savanna-light: #2d7a52;
+
+  /* ── Typography ─────────────────────────────────── */
+  --font-sans:    var(--font-jakarta), system-ui, sans-serif;
+  --font-display: var(--font-fraunces), Georgia, serif;
+  --font-mono:    var(--font-dm-mono), ui-monospace, monospace;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* ── Reset & Base ────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+/* ── Gold Rule — signature recurring element ─────── */
+.gold-rule {
+  display: block;
+  width: 48px;
+  height: 3px;
+  background-color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+/* ── Arc containers ──────────────────────────────── */
+.arc-section {
+  position: relative;
+}
+
+/* ── Slide fade transition ───────────────────────── */
+.slide-enter {
+  opacity: 0;
+  transform: scale(1.03);
+}
+.slide-enter-active {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 700ms ease-in-out, transform 700ms ease-in-out;
+}
+.slide-exit {
+  opacity: 1;
+}
+.slide-exit-active {
+  opacity: 0;
+  transition: opacity 700ms ease-in-out;
+}
+
+/* ── Eyebrow tag ─────────────────────────────────── */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-bottom: 1rem;
+}
+
+/* ── Prose colour utilities used in JSX ─────────── */
+.text-cobalt    { color: var(--color-cobalt); }
+.text-ember     { color: var(--color-ember); }
+.text-gold      { color: var(--color-gold); }
+.text-savanna   { color: var(--color-savanna); }
+.text-cream     { color: var(--color-cream); }
+.text-charcoal  { color: var(--color-charcoal); }
+
+.bg-cobalt      { background-color: var(--color-cobalt); }
+.bg-ember       { background-color: var(--color-ember); }
+.bg-gold        { background-color: var(--color-gold); }
+.bg-savanna     { background-color: var(--color-savanna); }
+.bg-cream       { background-color: var(--color-cream); }
+.bg-charcoal    { background-color: var(--color-charcoal); }
