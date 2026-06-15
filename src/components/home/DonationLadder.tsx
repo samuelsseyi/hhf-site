@@ -45,38 +45,59 @@ export function DonationLadder() {
             return (
               <div
                 key={amount}
-                className="group flex items-center gap-4 sm:gap-6 rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
+                className="group rounded-2xl p-4 sm:p-5 transition-all duration-300 hover:scale-[1.01] hover:shadow-xl"
                 style={{
                   marginLeft: `min(${indent}, 5vw)`,
                   background: bg,
                 }}
               >
-                {/* Icon */}
-                <span className="shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-white/15 border border-white/20">
-                  <Icon size={20} strokeWidth={1.8} className="text-white" />
-                </span>
+                {/* ── Mobile layout (stacked 2 rows) ── */}
+                <div className="sm:hidden">
+                  <div className="flex items-center gap-3">
+                    <span className="shrink-0 flex items-center justify-center w-10 h-10 rounded-xl bg-white/15 border border-white/20">
+                      <Icon size={18} strokeWidth={1.8} className="text-white" />
+                    </span>
+                    <span className="font-mono text-base font-medium text-gold flex-1">
+                      {amount}
+                    </span>
+                    <Link
+                      href={href}
+                      className={`shrink-0 text-xs font-bold px-4 py-1.5 rounded-full transition-all duration-200 ${
+                        isCustom
+                          ? "bg-gold text-charcoal"
+                          : "bg-white/20 border border-white/30 text-white"
+                      }`}
+                    >
+                      {isCustom ? "Talk to Us" : "Donate"}
+                    </Link>
+                  </div>
+                  <p className="text-white/80 text-sm leading-snug mt-2 pl-[52px]">
+                    {impact}
+                  </p>
+                </div>
 
-                {/* Amount */}
-                <span className="font-mono text-lg sm:text-xl font-medium text-gold shrink-0 w-28 sm:w-36">
-                  {amount}
-                </span>
-
-                {/* Impact */}
-                <p className="text-white/85 text-sm sm:text-base leading-snug flex-1">
-                  {impact}
-                </p>
-
-                {/* CTA */}
-                <Link
-                  href={href}
-                  className={`shrink-0 text-xs sm:text-sm font-bold px-4 py-2 rounded-full transition-all duration-200 ${
-                    isCustom
-                      ? "bg-gold text-charcoal hover:bg-gold-light"
-                      : "bg-white/15 border border-white/30 text-white hover:bg-white/25"
-                  }`}
-                >
-                  {isCustom ? "Talk to Us" : "Donate"}
-                </Link>
+                {/* ── Desktop layout (single row) ── */}
+                <div className="hidden sm:flex items-center gap-6">
+                  <span className="shrink-0 flex items-center justify-center w-12 h-12 rounded-xl bg-white/15 border border-white/20">
+                    <Icon size={20} strokeWidth={1.8} className="text-white" />
+                  </span>
+                  <span className="font-mono text-xl font-medium text-gold shrink-0 w-36">
+                    {amount}
+                  </span>
+                  <p className="text-white/85 text-base leading-snug flex-1">
+                    {impact}
+                  </p>
+                  <Link
+                    href={href}
+                    className={`shrink-0 text-sm font-bold px-4 py-2 rounded-full transition-all duration-200 ${
+                      isCustom
+                        ? "bg-gold text-charcoal hover:bg-gold-light"
+                        : "bg-white/15 border border-white/30 text-white hover:bg-white/25"
+                    }`}
+                  >
+                    {isCustom ? "Talk to Us" : "Donate"}
+                  </Link>
+                </div>
               </div>
             );
           })}
