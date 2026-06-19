@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "GCAMP — Girl Child Advocacy & Mentorship Project",
+  title: "GCAMP: Girl Child Advocacy & Mentorship Project",
   description:
     "GCAMP is a 9-month structured mentorship program reaching 250 girls across 5 schools in Ikorodu, Lagos. Launched January 2026, expanding to all 36 states by 2030.",
   openGraph: {
@@ -53,7 +53,7 @@ const PAIN_POINTS = [
   {
     icon: Eye,
     title: "Low self-confidence and weak self-expression",
-    body: "Many girls are told — directly or indirectly — that their voice doesn't matter.",
+    body: "Many girls are told, directly or indirectly, that their voice doesn't matter.",
   },
   {
     icon: Star,
@@ -63,7 +63,7 @@ const PAIN_POINTS = [
   {
     icon: Heart,
     title: "Emotional neglect and unaddressed psychosocial needs",
-    body: "Formal education is essential — but it is not enough without intentional emotional support.",
+    body: "Formal education is essential, but it is not enough without intentional emotional support.",
   },
 ];
 
@@ -579,9 +579,9 @@ export default function GCAMPPage() {
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <Globe size={40} className="text-gold/40 mx-auto mb-8" strokeWidth={1} />
             <blockquote className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold italic text-white leading-relaxed mb-6">
-              &ldquo;GCAMP is not a future idea — it is already happening, and partners are joining mid-journey to expand its reach.&rdquo;
+              &ldquo;GCAMP is not a future idea. It is already happening, and partners are joining mid-journey to expand its reach.&rdquo;
             </blockquote>
-            <p className="text-gold font-semibold mb-12">— HHF Programs Team</p>
+            <p className="text-gold font-semibold mb-12">HHF Programs Team</p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

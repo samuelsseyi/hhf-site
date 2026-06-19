@@ -4,7 +4,7 @@ import { Fragment } from "react";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn the story behind Haven for the Hopeless Foundation — our mission, vision, core values, and the passionate team transforming lives in Ikorodu, Lagos since 2024.",
+    "Learn the story behind Haven for the Hopeless Foundation: our mission, vision, core values, and the passionate team transforming lives in Ikorodu, Lagos since 2024.",
   openGraph: {
     title: "About Us | Haven for the Hopeless Foundation",
     description: "Our story, mission, vision, and the team behind the work.",
@@ -67,7 +67,7 @@ const VALUES = [
   {
     icon: CheckSquare,
     title: "Responsibility",
-    body: "We own our outcomes — good and bad.",
+    body: "We own our outcomes, good and bad.",
   },
   {
     icon: Sparkles,
@@ -80,7 +80,7 @@ const WHY_HHF = [
   {
     icon: RefreshCw,
     title: "Long-term, not one-off",
-    body: "We walk with communities over months and years — not just once. Transformation takes time.",
+    body: "We walk with communities over months and years, not just once. Transformation takes time.",
   },
   {
     icon: CheckSquare,
@@ -90,7 +90,7 @@ const WHY_HHF = [
   {
     icon: Home,
     title: "Built from within",
-    body: "Our facilitators, mentors, and volunteers come from and belong to the communities we serve. We're not outsiders — we're neighbours.",
+    body: "Our facilitators, mentors, and volunteers come from and belong to the communities we serve. We're not outsiders. We're neighbours.",
   },
 ];
 
@@ -170,7 +170,7 @@ const TEAM = [
     photo: "/images/team/WhatsApp Image 2026-06-15 at 05.20.34 (1).jpeg",
     name: "Programs Director",
     role: "Director of Programs",
-    bio: "Oversees the design and delivery of all HHF programs, ensuring structured, measurable impact across every initiative — from GCAMP to community wellness.",
+    bio: "Oversees the design and delivery of all HHF programs, ensuring structured, measurable impact across every initiative, from GCAMP to community wellness.",
   },
   {
     photo: "/images/team/WhatsApp Image 2026-06-15 at 05.20.35 (1).jpeg",
@@ -277,19 +277,19 @@ export default function AboutPage() {
                 <div className="space-y-4 text-charcoal/70 leading-relaxed">
                   <p>
                     Haven for the Hopeless Foundation was founded on the
-                    conviction that every person — no matter their background,
-                    circumstance, or social standing — deserves access to a
+                    conviction that every person, no matter their background,
+                    circumstance, or social standing, deserves access to a
                     community of support, opportunity, and hope.
                   </p>
                   <p>
                     HHF was established in 2024 in Ikorodu, Lagos, with a clear
                     focus: girls, women, and the less privileged. Not as charity
-                    cases — but as people of enormous, often untapped potential.
+                    cases, but as people of enormous, often untapped potential.
                   </p>
                   <p>
                     In our first year alone, we reached 1,000+ children,
                     supported 100 women, trained 40 Peace Ambassadors, and
-                    launched GCAMP — a national mentorship initiative already
+                    launched GCAMP, a national mentorship initiative already
                     transforming lives across 5 schools in Lagos.
                   </p>
                 </div>
@@ -489,7 +489,7 @@ export default function AboutPage() {
                       {sdg.num}
                     </div>
                     <span className="text-xs text-cobalt font-medium">
-                      SDG {sdg.num} — {sdg.label}
+                      SDG {sdg.num}: {sdg.label}
                     </span>
                   </div>
                 ))}

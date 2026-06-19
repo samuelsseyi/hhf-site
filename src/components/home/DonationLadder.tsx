@@ -13,7 +13,7 @@ const TIERS = [
   { amount: "₦50,000",   icon: "User",      impact: "Sponsors one girl through the full 9-month GCAMP cycle",       href: "/donate" },
   { amount: "₦100,000",  icon: "School",    impact: "Funds an entire school's monthly mentorship session",          href: "/donate" },
   { amount: "₦200,000",  icon: "Star",      impact: "Partners one full school into the GCAMP programme",            href: "/donate" },
-  { amount: "Custom",    icon: "Globe",     impact: "Become a Programme Sponsor — let's design your impact",        href: "/donate" },
+  { amount: "Custom",    icon: "Globe",     impact: "Become a Programme Sponsor. Let's design your impact.",        href: "/donate" },
 ];
 
 export function DonationLadder() {

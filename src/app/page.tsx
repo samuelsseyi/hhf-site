@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import { Header } from "@/components/layout/Header";
 
 export const metadata: Metadata = {
-  title: "Haven for the Hopeless Foundation — Empowering Lives for a Better Tomorrow",
+  title: "Haven for the Hopeless Foundation: Empowering Lives for a Better Tomorrow",
   description:
-    "HHF is a Nigerian NGO based in Ikorodu, Lagos. We run GCAMP, women empowerment programs, peacebuilding, and back-to-school projects — transforming 1,000+ lives since 2024.",
+    "HHF is a Nigerian NGO based in Ikorodu, Lagos. We run GCAMP, women empowerment programs, peacebuilding, and back-to-school projects, transforming 1,000+ lives since 2024.",
   openGraph: {
     title: "Haven for the Hopeless Foundation",
-    description: "Empowering Lives for a Better Tomorrow — Ikorodu, Lagos.",
+    description: "Empowering Lives for a Better Tomorrow. Ikorodu, Lagos.",
   },
   twitter: {
     card: "summary_large_image",
     title: "Haven for the Hopeless Foundation",
-    description: "Empowering Lives for a Better Tomorrow — Ikorodu, Lagos.",
+    description: "Empowering Lives for a Better Tomorrow. Ikorodu, Lagos.",
   },
 };
 import { Footer } from "@/components/layout/Footer";

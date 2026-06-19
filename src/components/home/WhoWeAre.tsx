@@ -48,12 +48,12 @@ export function WhoWeAre() {
             <p className="text-charcoal/80 text-base sm:text-lg leading-relaxed mb-5">
               Haven for the Hopeless Foundation is a purpose-driven Nigerian
               non-governmental organisation committed to empowering lives and
-              improving communities — especially women, children, and the less
-              privileged — through advocacy, education, mentorship, and
+              improving communities, especially women, children, and the less
+              privileged, through advocacy, education, mentorship, and
               development-focused initiatives.
             </p>
             <p className="text-charcoal/70 text-base sm:text-lg leading-relaxed mb-10">
-              We don&apos;t do one-off charity. We build long-term transformation —
+              We don&apos;t do one-off charity. We build long-term transformation
               in individuals, families, schools, and communities.
             </p>
 

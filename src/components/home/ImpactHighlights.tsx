@@ -76,7 +76,7 @@ export function ImpactHighlights() {
             What 2025 Looked Like.
           </h2>
           <p className="text-charcoal/60 text-base sm:text-lg max-w-xl">
-            A year of showing up — even when it was hard.
+            A year of showing up, even when it was hard.
           </p>
         </div>
 

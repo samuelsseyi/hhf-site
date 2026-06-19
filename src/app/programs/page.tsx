@@ -6,7 +6,7 @@ import { Star, ArrowRight, ChevronRight, HeartHandshake, Download } from "lucide
 export const metadata: Metadata = {
   title: "Our Programs",
   description:
-    "Explore HHF's structured programs — GCAMP, Women Empowerment, Drug Prevention, Back-to-School, and the Girl Child Leadership Conference. Built for lasting impact.",
+    "Explore HHF's structured programs: GCAMP, Women Empowerment, Drug Prevention, Back-to-School, and the Girl Child Leadership Conference. Built for lasting impact.",
   openGraph: {
     title: "Our Programs | Haven for the Hopeless Foundation",
     description:
@@ -84,7 +84,7 @@ const PROGRAMS_2026 = [
     tagBg: COLORS.ember,
     id: "drug",
     title: "Drug & Substance Abuse Prevention Campaign",
-    body: "School-centred sensitisation programs, peer education, and advocacy training — focused on prevention, awareness, and responsible decision-making among youth.",
+    body: "School-centred sensitisation programs, peer education, and advocacy training focused on prevention, awareness, and responsible decision-making among youth.",
     stats: ["Schools Targeted", "Peer Educators", "Youth Focused"],
     photo: "/images/flyers/WhatsApp Image 2026-06-11 at 15.57.40 (5).jpeg",
     photoAlt: "Drug & Substance Abuse Prevention Campaign flyer — HHF 2026",
@@ -383,7 +383,7 @@ export default function ProgramsPage() {
                 <p className="text-white/40 text-xs uppercase tracking-widest mb-2">2027 – 2030</p>
                 <h3 className="font-display text-2xl font-bold text-white mb-2">National Expansion</h3>
                 <p className="text-white/60 text-sm mb-6 max-w-xl mx-auto">
-                  GCAMP replicates across all 36 states of Nigeria — establishing a nationwide network of mentorship, leadership, and girl-child advocacy.
+                  GCAMP replicates across all 36 states of Nigeria, establishing a nationwide network of mentorship, leadership, and girl-child advocacy.
                 </p>
                 <div className="flex flex-wrap justify-center gap-2">
                   {EXPANSION_STATES.map((state) => (

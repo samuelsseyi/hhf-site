@@ -16,7 +16,7 @@ const VALUES = [
   { icon: HandHeart,   title: "Service",         body: "We exist to serve, not to be seen." },
   { icon: Eye,         title: "Transparency",    body: "Every naira and every action is accountable." },
   { icon: Leaf,        title: "Humility",        body: "We learn from the communities we serve." },
-  { icon: CheckSquare, title: "Responsibility",  body: "We own our outcomes — good and bad." },
+  { icon: CheckSquare, title: "Responsibility",  body: "We own our outcomes, good and bad." },
   { icon: Sparkles,    title: "Excellence",      body: "We do the work well because the work matters." },
 ];
 

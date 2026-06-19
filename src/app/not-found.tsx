@@ -17,11 +17,11 @@ export default function NotFound() {
       </Link>
 
       <span className="font-mono text-gold text-sm font-bold tracking-widest mb-4 uppercase">
-        404 — Page Not Found
+        404: Page Not Found
       </span>
 
       <h1 className="font-display text-4xl sm:text-5xl font-bold text-cobalt mb-4 max-w-lg leading-tight">
-        Oops — this page doesn&apos;t exist.
+        Oops, this page doesn&apos;t exist.
       </h1>
 
       <p className="text-charcoal/60 text-base max-w-sm mb-10 leading-relaxed">

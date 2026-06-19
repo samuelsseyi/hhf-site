@@ -4,7 +4,7 @@ import Image from "next/image";
 export const metadata: Metadata = {
   title: "Donate",
   description:
-    "Your gift changes a girl's life today — not eventually, today. Choose a donation amount, complete your details, and we'll send bank transfer instructions within minutes.",
+    "Your gift changes a girl's life today. Not eventually. Today. Choose a donation amount, complete your details, and bank transfer instructions appear instantly on your screen.",
   openGraph: {
     title: "Donate | Haven for the Hopeless Foundation",
     description:
@@ -267,8 +267,8 @@ export default function DonatePage() {
                 Make your donation.
               </h2>
               <p className="text-charcoal/60 text-base">
-                Fill in your details and we will send you bank transfer
-                instructions within minutes.
+                Fill in your details and bank transfer instructions appear
+                on your screen instantly.
               </p>
             </div>
 
@@ -434,7 +434,7 @@ export default function DonatePage() {
               href="/contact"
               className="inline-flex items-center gap-2 bg-ember hover:bg-ember/90 text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 shadow-md shadow-ember/20"
             >
-              Join them — contact us
+              Join them. Contact us.
               <ArrowRight size={16} strokeWidth={2.5} />
             </Link>
           </div>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Gallery | Haven for the Hopeless Foundation",
-    description: "Real moments from HHF's programmes — from the field.",
+    description: "Real moments from HHF's programmes, from the field.",
   },
 };
 import path from "path";
@@ -81,22 +81,28 @@ function loadImages() {
 
 const DOWNLOADS = [
   {
-    title: "HHF Organisation Profile",
-    type: "PDF",
-    description: "Our mission, programmes, and impact — in one document.",
-    available: false,
-  },
-  {
     title: "2025 Impact Report",
     type: "PDF",
     description: "A full account of our 2025 activities and beneficiary reach.",
-    available: false,
+    available: true,
+    href: "/HHF-Impact-Report-2025.pdf",
+    filename: "HHF-Impact-Report-2025.pdf",
+  },
+  {
+    title: "GCAMP Brochure 2026",
+    type: "PDF",
+    description: "Full details on the Girl Child Advocacy & Mentorship Project: programmes, reach, and sponsorship tiers.",
+    available: true,
+    href: "/GCAMP-Brochure-2026.pdf",
+    filename: "GCAMP-Brochure-2026.pdf",
   },
   {
     title: "Brand & Media Kit",
     type: "ZIP",
     description: "Logos, photos, and approved copy for press and partners.",
     available: false,
+    href: "",
+    filename: "",
   },
 ];
 
@@ -167,7 +173,8 @@ export default function GalleryPage() {
                   </p>
                   {file.available ? (
                     <a
-                      href="#"
+                      href={file.href}
+                      download={file.filename}
                       className="inline-flex items-center gap-2 bg-cobalt text-white font-bold text-xs px-5 py-2.5 rounded-full hover:bg-cobalt-light transition-colors"
                     >
                       Download

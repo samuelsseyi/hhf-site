@@ -28,7 +28,7 @@ const CARDS = [
   {
     icon: Package,
     title: "In-Kind Support",
-    body: "Educational materials, health supplies, equipment — we receive and distribute with care.",
+    body: "Educational materials, health supplies, equipment: we receive and distribute with care.",
     cta: "Learn More",
     href: "/get-involved",
   },

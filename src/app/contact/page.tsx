@@ -4,10 +4,10 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Reach out to HHF to donate, partner, volunteer, or learn more. We respond within 2 business days. Based in Ikorodu, Lagos — available to connect nationwide.",
+    "Reach out to HHF to donate, partner, volunteer, or learn more. We respond within 2 business days. Based in Ikorodu, Lagos, available to connect nationwide.",
   openGraph: {
     title: "Contact Us | Haven for the Hopeless Foundation",
-    description: "Let's build something together. Reach out — we respond within 2 business days.",
+    description: "Let's build something together. Reach out; we respond within 2 business days.",
   },
   twitter: {
     card: "summary_large_image",
@@ -38,7 +38,7 @@ const NEXT_STEPS = [
     icon: CheckSquare,
     step: "01",
     title: "We respond within 2 business days",
-    body: "No automated reply — a real person from the HHF team reads your message.",
+    body: "No automated reply. A real person from the HHF team reads your message.",
   },
   {
     icon: Phone,
@@ -75,7 +75,7 @@ export default function ContactPage() {
               Let&apos;s build something together.
             </h1>
             <p className="text-charcoal/60 text-lg sm:text-xl max-w-2xl leading-relaxed">
-              Whether you want to donate, partner, volunteer, or just learn more — we&apos;d love to
+              Whether you want to donate, partner, volunteer, or just learn more, we&apos;d love to
               hear from you.
             </p>
           </div>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                       Prefer a direct conversation?
                     </p>
                     <p className="text-charcoal/55 text-sm leading-relaxed mb-5">
-                      Reach out by phone — no gatekeepers, no forms. Just a real conversation
+                      Reach out by phone. No gatekeepers, no forms. Just a real conversation
                       about how you can be part of this work.
                     </p>
                     <Link

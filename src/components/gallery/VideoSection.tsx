@@ -16,52 +16,52 @@ const VIDEOS: Video[] = [
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.27.38.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.27.42.jpeg",
-    title: "GCAMP — Launch Day Highlights",
+    title: "GCAMP:Launch Day Highlights",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.30.30.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.29.jpeg",
-    title: "GCAMP — Girls Share Their Stories",
+    title: "GCAMP:Girls Share Their Stories",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.30.32.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.30.31.jpeg",
-    title: "GCAMP — Mentorship in Action",
+    title: "GCAMP:Mentorship in Action",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.39.45.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.44.jpeg",
-    title: "GCAMP — Empowerment Session",
+    title: "GCAMP:Empowerment Session",
   },
   {
     src: "/images/gcamp/WhatsApp Video 2026-06-11 at 09.39.47.mp4",
     thumbnail: "/images/gcamp/WhatsApp Image 2026-06-11 at 09.39.47.jpeg",
-    title: "Peace Ambassadors — Training Day",
+    title: "Peace Ambassadors:Training Day",
   },
   {
     src: "/images/back-to-school/WhatsApp Video 2026-06-15 at 11.30.37.mp4",
     thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.39.jpeg",
-    title: "Back to School — Distribution Day",
+    title: "Back to School:Distribution Day",
   },
   {
     src: "/images/back-to-school/WhatsApp Video 2026-06-15 at 11.32.49.mp4",
     thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (4).jpeg",
-    title: "Back to School — Community Moments",
+    title: "Back to School:Community Moments",
   },
   {
     src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.44.mp4",
     thumbnail: "/images/milo/WhatsApp Image 2026-06-15 at 11.32.40.jpeg",
-    title: "Milo Partnership — Collaboration Highlights",
+    title: "Milo Partnership:Collaboration Highlights",
   },
   {
     src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.45.mp4",
     thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (1).jpeg",
-    title: "Milo Partnership — Programme Impact",
+    title: "Milo Partnership:Programme Impact",
   },
   {
     src: "/images/milo/WhatsApp Video 2026-06-15 at 11.32.47.mp4",
     thumbnail: "/images/back-to-school/WhatsApp Image 2026-06-15 at 11.32.43 (2).jpeg",
-    title: "Milo Partnership — Community Engagement",
+    title: "Milo Partnership:Community Engagement",
   },
 ];
 

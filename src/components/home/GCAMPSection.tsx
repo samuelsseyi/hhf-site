@@ -63,7 +63,7 @@ export function GCAMPSection() {
             </p>
             <p className="text-white/80 text-base sm:text-lg leading-relaxed mb-4">
               The pilot is currently running in 5 public primary schools in
-              Ikorodu, Lagos — reaching 250 girls over a 9-month cycle.
+              Ikorodu, Lagos, reaching 250 girls over a 9-month cycle.
             </p>
             <p className="text-gold font-bold text-base sm:text-lg mb-10">
               This is not a future plan. It is happening right now.

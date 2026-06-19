@@ -5,7 +5,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Get Involved",
   description:
-    "Donate, partner, volunteer, or give in kind. There's a role here for you — and your contribution directly transforms lives in Ikorodu, Lagos.",
+    "Donate, partner, volunteer, or give in kind. There's a role here for you, and your contribution directly transforms lives in Ikorodu, Lagos.",
   openGraph: {
     title: "Get Involved | Haven for the Hopeless Foundation",
     description: "Donate, partner, or volunteer. Your contribution changes lives.",
@@ -99,7 +99,7 @@ export default function GetInvolvedPage() {
               There&apos;s a role here for you.
             </h1>
             <p className="text-white/70 text-lg sm:text-xl max-w-2xl leading-relaxed">
-              Whether you give money, time, skills, or a platform — your contribution changes lives.
+              Whether you give money, time, skills, or a platform, your contribution changes lives.
             </p>
           </div>
 
@@ -354,7 +354,7 @@ export default function GetInvolvedPage() {
                 </div>
                 <div>
                   <p className="text-white font-bold text-base">2025 Impact Report</p>
-                  <p className="text-white/50 text-sm">See exactly where every programme goes — documented and verified.</p>
+                  <p className="text-white/50 text-sm">See exactly where every programme goes, documented and verified.</p>
                 </div>
               </div>
               <a
@@ -373,7 +373,7 @@ export default function GetInvolvedPage() {
         <section className="relative py-24 bg-ember overflow-hidden">
           <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white leading-tight mb-4">
-              Whatever you bring — bring it.
+              Whatever you bring, bring it.
             </h2>
             <p className="text-white/70 text-lg mb-10">
               The work needs all of us.

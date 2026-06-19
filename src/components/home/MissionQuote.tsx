@@ -25,11 +25,11 @@ export function MissionQuote() {
 
         <blockquote>
           <p className="font-display text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold italic text-white leading-tight mb-6">
-            &ldquo;When a girl is mentored, empowered, and inspired — an entire generation shifts.&rdquo;
+            &ldquo;When a girl is mentored, empowered, and inspired, an entire generation shifts.&rdquo;
           </p>
           <footer>
             <cite className="not-italic text-gold font-semibold text-sm tracking-widest uppercase">
-              — Haven for the Hopeless Foundation
+              Haven for the Hopeless Foundation
             </cite>
           </footer>
         </blockquote>

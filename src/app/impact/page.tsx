@@ -22,7 +22,7 @@ import { COLORS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: "Our Impact",
   description:
-    "Real numbers, real lives. HHF has reached 1,000+ children, supported 100 women, enrolled 250 girls in GCAMP, and trained 40 Peace Ambassadors — all documented.",
+    "Real numbers, real lives. HHF has reached 1,000+ children, supported 100 women, enrolled 250 girls in GCAMP, and trained 40 Peace Ambassadors, all documented.",
   openGraph: {
     title: "Our Impact | Haven for the Hopeless Foundation",
     description:
@@ -102,7 +102,7 @@ const TIMELINE = [
     year: "2026",
     label: "GCAMP Launches",
     items: [
-      "GCAMP launched January 21 — 250 girls enrolled",
+      "GCAMP launched January 21: 250 girls enrolled",
       "5 public schools partnered in Ikorodu",
       "Back-to-School Project reaching 1,000+ children",
       "Girl Child Leadership Conference planned for October",
@@ -240,7 +240,7 @@ export default function ImpactPage() {
                 A movement in motion.
               </h2>
               <p className="text-charcoal/60 text-base">
-                From founding to national impact — two years of real work.
+                From founding to national impact. Two years of real work.
               </p>
             </div>
 
@@ -349,7 +349,7 @@ export default function ImpactPage() {
                     Read the full story of 2025.
                   </h2>
                   <p className="text-charcoal/60 text-base leading-relaxed mb-6">
-                    Our 2025 Impact Report documents every programme, every number, and every life — widows empowered, children reached, Peace Ambassadors trained, and the launch of GCAMP. Transparent, photographed, and verified.
+                    Our 2025 Impact Report documents every programme, every number, and every life: widows empowered, children reached, Peace Ambassadors trained, and the launch of GCAMP. Transparent, photographed, and verified.
                   </p>
                   <div className="flex flex-col sm:flex-row gap-3">
                     <a
@@ -383,7 +383,7 @@ export default function ImpactPage() {
               Be part of the next chapter.
             </h2>
             <p className="text-white/70 text-base mb-8">
-              Every donation adds another number to this page — and another life to the story.
+              Every donation adds another number to this page, and another life to the story.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

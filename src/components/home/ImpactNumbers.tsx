@@ -90,7 +90,7 @@ export function ImpactNumbers() {
             The Work, in Numbers.
           </h2>
           <p className="text-white/60 text-base sm:text-lg max-w-xl mx-auto">
-            Every figure is a life — touched, changed, lifted.
+            Every figure is a life: touched, changed, lifted.
           </p>
         </div>
 

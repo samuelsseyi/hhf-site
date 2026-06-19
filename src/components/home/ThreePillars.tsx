@@ -11,7 +11,7 @@ const PILLARS = [
     icon: GraduationCap,
     overlayColor: "bg-cobalt/80",
     title: "Access to Quality Education",
-    body: "We provide educational materials and build the mental capacity of children — equipping them for a productive, purpose-driven life.",
+    body: "We provide educational materials and build the mental capacity of children, equipping them for a productive, purpose-driven life.",
     href: "/programs",
   },
   {
@@ -20,7 +20,7 @@ const PILLARS = [
     icon: Users,
     overlayColor: "bg-ember/80",
     title: "Girl Child & Women Empowerment",
-    body: "We equip girls and women with confidence, dignity, leadership capacity, and the right mindset to thrive — starting with who they are before addressing what they face.",
+    body: "We equip girls and women with confidence, dignity, leadership capacity, and the right mindset to thrive, starting with who they are before addressing what they face.",
     href: "/programs",
   },
   {
@@ -29,7 +29,7 @@ const PILLARS = [
     icon: Globe,
     overlayColor: "bg-savanna/80",
     title: "Community Development & Advocacy",
-    body: "We promote sustainable development, equality, justice, civic responsibility, and community-driven solutions — because lasting change is built from within.",
+    body: "We promote sustainable development, equality, justice, civic responsibility, and community-driven solutions, because lasting change is built from within.",
     href: "/programs",
   },
 ];
