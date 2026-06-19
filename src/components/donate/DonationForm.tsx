@@ -17,7 +17,7 @@ const BANK_DETAILS = {
 
 // Formspree endpoint — sign up free at formspree.io, create a form, paste the
 // action URL here so donor details are emailed to you for follow-up.
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/YOUR_FORM_ID";
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xpqevjyk";
 
 const ICON_MAP: Record<string, React.ElementType> = {
   Backpack: Package,
